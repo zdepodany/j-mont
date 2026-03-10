@@ -265,8 +265,11 @@ img {
 }
 
 .gallery-item {
+  display: block;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .gallery-item-large {
@@ -303,6 +306,20 @@ img {
   transform: translateY(0);
 }
 
+.gallery-all-link {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
+
+.gallery-all-link a {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.gallery-all-link a:hover {
+  text-decoration: underline;
+}
+
 /* Services - Co stavíme */
 .services-grid {
   display: grid;
@@ -311,15 +328,30 @@ img {
 }
 
 .service-card {
+  display: block;
   padding: var(--space-lg);
   background: white;
   border: 2px solid var(--color-border);
   transition: border-color var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  color: inherit;
 }
 
 .service-card:hover {
   border-color: var(--color-accent);
   box-shadow: 4px 4px 0 var(--color-accent);
+}
+
+.service-card-link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.service-card:hover .service-card-link {
+  text-decoration: underline;
 }
 
 .service-icon {
@@ -440,235 +472,6 @@ img {
   font-size: 0.85rem;
   color: var(--color-text-muted);
   font-style: italic;
-}
-
-/* Kalkulačka ceny */
-.price-calculator {
-  margin-top: var(--space-xl);
-  padding: var(--space-lg);
-  background: white;
-  border: 2px solid var(--color-border);
-}
-
-.calculator-title {
-  font-size: 1.25rem;
-  margin-bottom: var(--space-xs);
-}
-
-.calculator-note {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-lg);
-}
-
-.calculator-body {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--space-xl);
-  align-items: start;
-}
-
-.calculator-inputs {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.calculator-field label,
-.calculator-field .field-label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: var(--space-sm);
-}
-
-.area-input-wrap {
-  display: flex;
-  align-items: center;
-  border: 2px solid var(--color-border);
-  background: var(--color-bg);
-  max-width: 140px;
-}
-
-.area-input-wrap:focus-within {
-  border-color: var(--color-accent);
-}
-
-.area-input-wrap input {
-  flex: 1;
-  min-width: 0;
-  padding: 0.75rem 0.5rem 0.75rem 1rem;
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 600;
-  border: none;
-  background: transparent;
-}
-
-.area-input-wrap input:focus {
-  outline: none;
-}
-
-.area-input-wrap .input-suffix {
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-}
-
-.field-hint {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-top: var(--space-xs);
-}
-
-.quick-sizes {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-xs);
-  margin-top: var(--space-sm);
-}
-
-.quick-label {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-right: var(--space-xs);
-}
-
-.quick-btn {
-  padding: 0.4rem 0.75rem;
-  font-size: 0.85rem;
-  font-family: var(--font-body);
-  font-weight: 500;
-  color: var(--color-text-muted);
-  background: var(--color-bg-alt);
-  border: 2px solid var(--color-border);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.quick-btn:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
-
-.quick-btn.active {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: white;
-}
-
-.type-options {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-sm);
-}
-
-.type-option {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-md);
-  border: 2px solid var(--color-border);
-  background: var(--color-bg);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.type-option:hover {
-  border-color: var(--color-accent);
-}
-
-.type-option input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.type-option input:checked + .type-option-label {
-  color: var(--color-accent);
-  font-weight: 600;
-}
-
-.type-option:has(input:checked) {
-  border-color: var(--color-accent);
-  background: rgba(90, 154, 90, 0.08);
-}
-
-.type-option-label {
-  font-size: 0.95rem;
-  margin-bottom: 2px;
-}
-
-.type-option-price {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-.calculator-result {
-  padding: var(--space-lg);
-  min-width: 220px;
-  background: var(--color-bg-alt);
-  border: 2px solid var(--color-accent);
-  text-align: center;
-}
-
-.calculator-result.has-value {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-}
-
-.calculator-result.has-value .result-label,
-.calculator-result.has-value .result-value {
-  color: white;
-}
-
-.result-label {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-xs);
-}
-
-.result-value {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  margin-bottom: var(--space-sm);
-}
-
-.result-cta {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--color-accent);
-}
-
-.calculator-result.has-value .result-cta {
-  color: white;
-  text-decoration: underline;
-}
-
-.result-cta:hover {
-  color: var(--color-accent-hover);
-}
-
-.calculator-result.has-value .result-cta:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-@media (max-width: 700px) {
-  .calculator-body {
-    grid-template-columns: 1fr;
-  }
-
-  .type-options {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Proces */
@@ -1002,6 +805,236 @@ img {
   padding: var(--space-md);
   background: var(--color-bg-alt);
   border-left: 4px solid var(--color-accent);
+}
+
+/* Služby - detail podstránky */
+.service-detail-section {
+  margin-bottom: var(--space-xl);
+}
+
+.service-detail-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.service-detail-item {
+  margin-bottom: var(--space-lg);
+}
+
+.service-detail-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.service-detail-item p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-benefits {
+  list-style: none;
+}
+
+.service-benefits li {
+  padding: var(--space-sm) 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.service-detail-section p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.service-detail-section a {
+  color: var(--color-accent);
+}
+
+.service-detail-section a:hover {
+  text-decoration: underline;
+}
+
+/* Realizace - stránka s projekty */
+.realizace-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.realizace-card {
+  padding: var(--space-lg);
+  background: white;
+  border: 2px solid var(--color-border);
+  scroll-margin-top: 100px;
+}
+
+.realizace-card-content {
+  margin-bottom: var(--space-lg);
+}
+
+.realizace-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.realizace-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.realizace-card p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Galerie obrázků v projektu */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-sm);
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid var(--color-border);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.project-gallery img:hover {
+  border-color: var(--color-accent);
+  transform: scale(1.02);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  line-height: 1;
+  color: white;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.lightbox-close:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+.lightbox-prev {
+  left: var(--space-md);
+}
+
+.lightbox-next {
+  right: var(--space-md);
+}
+
+.lightbox.single-image .lightbox-prev,
+.lightbox.single-image .lightbox-next,
+.lightbox.single-image .lightbox-counter {
+  display: none;
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-gallery img {
+    height: 140px;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 44px;
+    height: 44px;
+    font-size: 1.75rem;
+  }
 }
 
 .standard-cta {
