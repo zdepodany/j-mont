@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>j-mont | Stavíme domovy, ne domy</title>
+  <meta name="description" content="j-mont – stavební firma. Rodinné domy, dřevostavby a rekonstrukce na klíč. Kvalita, spolehlivost, individuální přístup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">j-mont</a>
+      <button class="nav-toggle" aria-label="Otevřít menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#realizace">Realizace</a></li>
+        <li><a href="#co-stavime">Co stavíme</a></li>
+        <li><a href="#cenik">Ceník</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Stavíme domovy,<br>ne domy</h1>
+        <p class="hero-subtitle">Stavební firma s individuálním přístupem. Rodinné domy, dřevostavby a rekonstrukce na klíč.</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Pojďme stavět</a>
+          <a href="#realizace" class="btn btn-secondary">Naše realizace</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-pattern"></div>
+      </div>
+    </section>
+
+    <!-- 2. Realizace -->
+    <section class="section realizace" id="realizace">
+      <div class="container">
+        <h2 class="section-title">Realizace</h2>
+        <p class="section-intro">Prohlédněte si naše dokončené projekty</p>
+        <div class="gallery">
+          <div class="gallery-item gallery-item-large">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Rodinný dům - realizace j-mont">
+            <div class="gallery-overlay">
+              <span>Rodinný dům</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Dřevostavba - realizace j-mont">
+            <div class="gallery-overlay">
+              <span>Dřevostavba</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Moderní interiér - realizace j-mont">
+            <div class="gallery-overlay">
+              <span>Interiér</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Rekonstrukce - realizace j-mont">
+            <div class="gallery-overlay">
+              <span>Rekonstrukce</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Stavba - realizace j-mont">
+            <div class="gallery-overlay">
+              <span>Stavba na klíč</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Co stavíme -->
+    <section class="section co-stavime" id="co-stavime">
+      <div class="container">
+        <h2 class="section-title">Co stavíme</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/>
+              </svg>
+            </div>
+            <h3>Rodinné domy</h3>
+            <p>Kompletní výstavba rodinných domů od projektu po realizaci. Tradiční i moderní architektura.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3v18M3 12h18M5 5l14 14M19 5L5 19"/>
+              </svg>
+            </div>
+            <h3>Dřevostavby</h3>
+            <p>Energeticky úsporné dřevostavby s difúzně otevřenou nebo uzavřenou konstrukcí.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 7h6m-3 3v6m-3-3h6M4 5v14a2 2 0 002 2h4M4 5V5a2 2 0 012-2h4a2 2 0 012 2v0M4 5h16"/>
+              </svg>
+            </div>
+            <h3>Rekonstrukce</h3>
+            <p>Kompletní rekonstrukce bytů a domů. Moderní materiály a postupy pro příjemné bydlení.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h3>Průmyslové haly</h3>
+            <p>Výstavba průmyslových a skladových hal včetně projektové dokumentace.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proč j-mont -->
+    <section class="section proc-j-mont" id="proc-j-mont">
+      <div class="container">
+        <h2 class="section-title">Proč j-mont</h2>
+        <div class="reasons-grid">
+          <div class="reason-item">
+            <span class="reason-number">01</span>
+            <h3>Komplexnost</h3>
+            <p>Projektová dokumentace, administrativa i samotná realizace – vše z jedné ruky.</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-number">02</span>
+            <h3>Kvalita</h3>
+            <p>Kvalifikovaní pracovníci, ověřené materiály a pečlivé provedení každého detailu.</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-number">03</span>
+            <h3>Individuální přístup</h3>
+            <p>Každý projekt je jedinečný. Nasloucháme vašim představám a přizpůsobujeme se.</p>
+          </div>
+          <div class="reason-item">
+            <span class="reason-number">04</span>
+            <h3>Stavba na klíč</h3>
+            <p>Od prvního setkání až po předání klíčů – bez starostí na vaší straně.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Ceník -->
+    <section class="section cenik" id="cenik">
+      <div class="container">
+        <h2 class="section-title">Orientační ceník</h2>
+        <p class="section-intro">Ceny za m² zastavěné plochy. Konkrétní cena závisí na rozsahu, materiálech a individuálních požadavcích. Rádi připravíme nezávaznou nabídku.</p>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <h3>Spodní stavba</h3>
+            <p class="price-range">od 1 700 Kč / m²</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Hrubá stavba</h3>
+            <p class="price-range">od 9 500 Kč / m²</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Stavba k dokončení</h3>
+            <p class="price-range">od 13 500 Kč / m²</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Na klíč</h3>
+            <p class="price-range">od 16 500 Kč / m²</p>
+            <a href="technicky-standard.html" class="pricing-link">Technický standard domu →</a>
+          </div>
+        </div>
+
+        <div class="price-calculator">
+          <h3 class="calculator-title">Orientační kalkulačka ceny</h3>
+          <p class="calculator-note">Spočítejte si přibližnou cenu podle zastavěné plochy. Výsledek je pouze orientační.</p>
+          
+          <div class="calculator-body">
+            <div class="calculator-inputs">
+              <div class="calculator-field">
+                <label for="calc-area">Zastavěná plocha</label>
+                <div class="area-input-wrap">
+                  <input type="number" id="calc-area" placeholder="120" min="20" max="500" step="5" inputmode="numeric" aria-describedby="calc-area-hint">
+                  <span class="input-suffix">m²</span>
+                </div>
+                <p id="calc-area-hint" class="field-hint">Zadejte 20–500 m²</p>
+                <div class="quick-sizes">
+                  <span class="quick-label">Rychlý výběr:</span>
+                  <button type="button" class="quick-btn" data-area="80">80</button>
+                  <button type="button" class="quick-btn" data-area="100">100</button>
+                  <button type="button" class="quick-btn" data-area="120">120</button>
+                  <button type="button" class="quick-btn" data-area="150">150</button>
+                  <button type="button" class="quick-btn" data-area="200">200</button>
+                </div>
+              </div>
+
+              <div class="calculator-field">
+                <span class="field-label">Rozsah stavby</span>
+                <div class="type-options" role="radiogroup" aria-label="Rozsah stavby">
+                  <label class="type-option">
+                    <input type="radio" name="calc-type" value="1700" checked>
+                    <span class="type-option-label">Spodní stavba</span>
+                    <span class="type-option-price">1 700 Kč/m²</span>
+                  </label>
+                  <label class="type-option">
+                    <input type="radio" name="calc-type" value="9500">
+                    <span class="type-option-label">Hrubá stavba</span>
+                    <span class="type-option-price">9 500 Kč/m²</span>
+                  </label>
+                  <label class="type-option">
+                    <input type="radio" name="calc-type" value="13500">
+                    <span class="type-option-label">Stavba k dokončení</span>
+                    <span class="type-option-price">13 500 Kč/m²</span>
+                  </label>
+                  <label class="type-option">
+                    <input type="radio" name="calc-type" value="16500">
+                    <span class="type-option-label">Na klíč</span>
+                    <span class="type-option-price">16 500 Kč/m²</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="calculator-result" id="calc-result">
+              <span class="result-label">Orientační cena</span>
+              <span class="result-value" id="calc-value">Zadejte plochu</span>
+              <a href="#kontakt" class="result-cta">Chci nezávaznou nabídku →</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="pricing-disclaimer">* Ceny jsou orientační. Pro přesnou kalkulaci nás kontaktujte.</p>
+      </div>
+    </section>
+
+    <!-- 6. Proces stavby -->
+    <section class="section proces" id="proces">
+      <div class="container">
+        <h2 class="section-title">Proces stavby</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-num">1</span>
+            <h3>Konzultace</h3>
+            <p>Seznámení s vašimi představami, prohlídka pozemku, první odhad.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <span class="step-num">2</span>
+            <h3>Projekt</h3>
+            <p>Zpracování projektové dokumentace a získání potřebných povolení.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <span class="step-num">3</span>
+            <h3>Realizace</h3>
+            <p>Stavba podle harmonogramu s pravidelnou komunikací.</p>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step">
+            <span class="step-num">4</span>
+            <h3>Předání</h3>
+            <p>Kolaudace, předání klíčů a záruční servis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Reference -->
+    <section class="section reference" id="reference">
+      <div class="container">
+        <h2 class="section-title">Reference</h2>
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            <p>„Jeho domy vypadají skvěle. Zatím spokojenost. Dobrá komunikace.“</p>
+            <cite>— Jitka</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>„Spolupráce s j-mont byla bezproblémová. Dům byl dokončen v termínu a kvalita odpovídá našim očekáváním. Doporučuji.“</p>
+            <cite>— Zákazník, rodinný dům Božice</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>„Individuální přístup a ochota vyjít vstříc. Od projektu až po realizaci vše proběhlo hladce.“</p>
+            <cite>— Zákazník, rekonstrukce bytu</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Kontakt -->
+    <section class="section kontakt" id="kontakt">
+      <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-intro">Máte dotaz nebo chcete nezávaznou nabídku? Ozveme se co nejdřív.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>j-mont</h3>
+            <p class="contact-name">Karel Jakubec</p>
+            <ul class="contact-details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>Božice 493, 671 64 Božice</span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </span>
+                <a href="tel:+420777990885">+420 777 990 885</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <a href="mailto:j-mont@seznam.cz">j-mont@seznam.cz</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </span>
+                <a href="https://www.facebook.com/profile.php?id=100072035597939" target="_blank" rel="noopener">Facebook</a>
+              </li>
+            </ul>
+            <p class="contact-ic">IČ: <a href="https://rejstrik.penize.cz/rzp/74986643-karel-jakubec" target="_blank" rel="noopener">74986643</a></p>
+          </div>
+          <div class="contact-form-wrapper">
+            <h3 class="form-title">Nezávazná poptávka</h3>
+            <form class="contact-form" action="mailto:j-mont@seznam.cz" method="post" enctype="text/plain">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Jméno *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Předmět *</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Zpráva *</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13295.22208533084!2d16.27819886187611!3d48.83431799666165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d4ce3f237bc13%3A0x1870733b437de099!2sKarel%20Jakubec%20j-mont!5e0!3m2!1scs!2scz!4v1773177802045!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokace j-mont na mapě"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 j-mont. Stavební firma. <a href="https://www.facebook.com/profile.php?id=100072035597939" target="_blank" rel="noopener">Facebook</a></p>
+      <p class="footer-credit">Web vytvořil <a href="https://zdenekpodany.cz" target="_blank" rel="noopener">Zdeněk Podaný</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
